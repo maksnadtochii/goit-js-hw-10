@@ -8,9 +8,31 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
+    <section class="go-to-home">
       <a href="./index.html">Go to home</a>
     </section>
+    <form class="form">
+      <label class="snack-label">
+        Delay (ms)
+        <input class="snack-input" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="fieldset">
+        <legend class="state">State</legend>
+        <div class="state-wrap">
+          <label class="fulfilled-radio">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="rejected-radio">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </div>
+      </fieldset>
+
+      <button class="radio-btn" type="submit">Create notification</button>
+    </form>
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
